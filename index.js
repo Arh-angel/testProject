@@ -15,7 +15,7 @@ bot.on('text', (ctx) => {
       }
     }).then((res) => {
       const arrResult = res.data.list.map((el) => {
-        if (el.weather[0].main === 'Snow') {
+        if (el.weather[0].main === 'Rain') {
           return res.data.city.name + ' ' + el.weather[0].description + ' до ' + el.dt_txt
         }
       });
